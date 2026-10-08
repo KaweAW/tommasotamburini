@@ -7,19 +7,19 @@ Portfolio of **Tommaso Tamburini**, a 2D animator and story artist from Italy wh
 **Live site: [tommasotamburini.com](https://tommasotamburini.com)**
 
 <p align="center">
-  <img src="docs/screenshots/biography.webp" alt="The biography page with a portrait and a short presentation" width="88%">
+  <img src="docs/screenshots/social-preview.png" alt="Tommaso Tamburini, portfolio of a 2D animator and storyboard artist, with two screenshots of the site" width="88%">
 </p>
 
 <table>
   <tr>
+    <td width="33%"><img src="docs/screenshots/biography.webp" alt="The biography page with a portrait and a short presentation"></td>
     <td width="33%"><img src="docs/screenshots/animation.webp" alt="The animation page: a grid of cards for feature films and series, each opening a video player"></td>
     <td width="33%"><img src="docs/screenshots/storyboard.webp" alt="The storyboard page: a grid of storyboard projects"></td>
-    <td width="33%"><img src="docs/screenshots/resume.webp" alt="The resume page with studio logos, a Download CV button and the work experience"></td>
   </tr>
   <tr>
+    <td align="center">Biography</td>
     <td align="center">Animation</td>
     <td align="center">Storyboard</td>
-    <td align="center">Resume</td>
   </tr>
 </table>
 
