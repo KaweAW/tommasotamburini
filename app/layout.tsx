@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     alternateLocale: "it_IT",
-    url: "https://tommasotamburin.com",
+    url: "https://www.tommasotamburini.com",
     siteName: "Tommaso Tamburini Portfolio",
     title: "Tommaso Tamburini - Professional 2D Animator & Storyboard Artist",
     description:
@@ -51,10 +51,10 @@ export const metadata: Metadata = {
     google: "907410883a986753",
   },
   alternates: {
-    canonical: "https://tommasotamburin.com",
+    canonical: "https://www.tommasotamburini.com",
     languages: {
-      "en-US": "https://tommasotamburin.com",
-      "it-IT": "https://tommasotamburin.com",
+      "en-US": "https://www.tommasotamburini.com",
+      "it-IT": "https://www.tommasotamburini.com",
     },
   },
     generator: 'v0.app'
@@ -80,7 +80,7 @@ export default function RootLayout({
               jobTitle: "2D Animator & Storyboard Artist",
               description:
                 "Professional 2D Animator and Storyboard Artist with over 7 years of experience in the animation industry, specialized in feature films and animated series.",
-              url: "https://tommasotamburin.com",
+              url: "https://www.tommasotamburini.com",
               image:
                 "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_9023%20-%20Copia.png-ZXGUsYe7ncLr3WCIieABGdrH44KCk5.jpeg",
               sameAs: [
