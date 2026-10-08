@@ -131,3 +131,29 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Highlighted titles inside the biography text (they open the matching project) */
+.clickable-storyboard {
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.clickable-storyboard::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: currentColor;
+  transition: width 1s ease;
+}
+
+.clickable-storyboard:hover::after {
+  width: 100%;
+}
+
+.clickable-storyboard:hover {
+  opacity: 0.8;
+}

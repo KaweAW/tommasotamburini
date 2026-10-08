@@ -2,6 +2,7 @@ import type React from "react"
 import { Roboto } from "next/font/google"
 import "./globals.css"
 import type { Metadata } from "next"
+import { SiteShell } from "@/components/site-shell"
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -11,7 +12,11 @@ const roboto = Roboto({
 })
 
 export const metadata: Metadata = {
-  title: "Tommaso Tamburini - 2D Animator & Storyboard Artist | Disney, Netflix, Fox Animation",
+  metadataBase: new URL("https://www.tommasotamburini.com"),
+  title: {
+    default: "Tommaso Tamburini - 2D Animator & Storyboard Artist | Disney, Netflix, Fox Animation",
+    template: "%s | Tommaso Tamburini",
+  },
   description:
     "Tommaso Tamburini is a professional 2D Animator and Storyboard Artist from Italy with 7+ years experience. Worked with Disney, Netflix, Fox Animation, Cartoon Network, Toei Animation on Disenchanted, Central Park, One Piece, and more.",
   keywords:
@@ -49,13 +54,6 @@ export const metadata: Metadata = {
   },
   verification: {
     google: "907410883a986753",
-  },
-  alternates: {
-    canonical: "https://www.tommasotamburini.com",
-    languages: {
-      "en-US": "https://www.tommasotamburini.com",
-      "it-IT": "https://www.tommasotamburini.com",
-    },
   },
     generator: 'v0.app'
 }
@@ -146,7 +144,9 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="font-sans">{children}</body>
+      <body className="font-sans">
+        <SiteShell>{children}</SiteShell>
+      </body>
     </html>
   )
 }

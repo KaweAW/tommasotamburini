@@ -25,13 +25,13 @@ Portfolio of **Tommaso Tamburini**, a 2D animator and story artist from Italy wh
 
 ## Features
 
-- **Six sections in one page**: biography, animation, storyboard, personal projects, resume and contacts, switched from a sticky navigation bar.
+- **One page per section**: biography (`/`), `/animation`, `/storyboard`, `/personal-projects`, `/resume` and `/contacts`, each with its own title, description, canonical URL and sitemap entry, so search engines can index them and people can share a direct link.
 - **Video showcase**: Vimeo players for each production, opened from a card.
 - **Storyboard galleries**: image viewer with next and previous controls.
-- **English and Italian**: one button switches every text on the page.
+- **English and Italian**: one button switches every text on the page; the choice is remembered while moving between pages.
 - **Downloadable CV**: a PDF served by the site itself (`public/cv-tommaso-tamburini.pdf`).
 - **Search engine basics**: page metadata, Open Graph and Twitter cards, `schema.org` structured data for the person, a sitemap and `robots.txt`.
-- **Responsive layout** for phones, tablets and desktops.
+- **Built for phones too**: a slim header with a full-screen menu, two-column galleries with the title always visible (there is no hover on a touch screen), big tap targets and swipe in the storyboard viewer. The desktop layout is unchanged.
 
 ## Tech stack
 
@@ -62,17 +62,26 @@ The first build downloads the Roboto font from Google Fonts, so it needs an inte
 
 ```text
 app/
-  layout.tsx       page metadata, structured data and fonts
-  page.tsx         the whole page: texts (English and Italian), sections and players
-  sitemap.ts       sitemap
-components/ui/     shadcn/ui components
+  layout.tsx       site-wide metadata, structured data and fonts
+  page.tsx         biography (/); animation/, storyboard/, personal-projects/,
+                   resume/ and contacts/ hold one page each, with their own metadata
+  sitemap.ts       sitemap built from lib/routes.ts
+components/
+  site-shell.tsx   header (desktop bar and phone menu), footer
+  language-provider.tsx  English/Italian state shared by all pages
+  sections/        the content of each page and its viewers (lightbox, video players)
+  ui/              shadcn/ui components
+lib/
+  translations.ts  every text, in English and Italian
+  data.ts          storyboard, animation, video and sketch lists
+  routes.ts        section URLs
 public/            images, icons, robots.txt and the CV (cv-tommaso-tamburini.pdf)
 scripts/
   generate-cv.py   builds a plain-text CV with reportlab (not used by the site yet)
 docs/screenshots/  the pictures used in this README
 ```
 
-To change a text, edit the `translations` object in `app/page.tsx` (one entry per language). To update the CV, replace `public/cv-tommaso-tamburini.pdf`; the Download CV button always points to that file.
+To change a text, edit `lib/translations.ts` (one entry per language); to add a project, edit `lib/data.ts`. To update the CV, replace `public/cv-tommaso-tamburini.pdf`; the Download CV button always points to that file.
 
 ## Deployment
 
@@ -80,8 +89,6 @@ The site is deployed on Vercel from the `main` branch; every pull request gets a
 
 ## Ideas for next steps
 
-- Give each section its own URL (`/animation`, `/storyboard`...) instead of switching content inside one page. Links to a section would then be shareable and indexable, and the sitemap could list real pages instead of `#` anchors.
-- Make the sticky header shorter on phones, so more of the content is visible.
 - Host the images that are now on external storage inside the project and serve them with `next/image`.
 - Add automated checks (type-check and build) to a GitHub Actions workflow.
 
