@@ -879,7 +879,7 @@ export default function Portfolio() {
       <div className="flex justify-center mb-8">
         <Button asChild className="gap-2">
           <a
-            href="https://github.com/KaweAW/tommasotamburini/raw/da0259dee376d880d96992fce41c03b98a4f3e8f/C%20V%202025.pdf"
+            href="/cv-tommaso-tamburini.pdf"
             download
           >
             <Download className="h-4 w-4" />
