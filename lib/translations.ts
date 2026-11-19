@@ -13,7 +13,7 @@ export const translations = {
       title: "About Me",
       content: [
         "<strong>Tommaso Tamburini</strong> is a 2D Animator, Story Artist, and Actor from Italy, with over seven years of experience in the animation industry.",
-        'Specialized in feature films and animated series, he has collaborated with renowned studios such as <span class="text-primary font-bold">Disney</span>, <span class="text-primary font-bold">Fox Animation</span>, <span class="text-primary font-bold">Netflix</span>, <span class="text-primary font-bold">Xilam</span>, <span class="text-primary font-bold">Cartoon Network</span>, <span class="text-primary font-bold">Rai</span>, and <span class="text-primary font-bold">Toei Animation</span>. His credits include acclaimed titles such as <em class="text-primary clickable-storyboard" data-storyboard="disenchanted">Disenchanted</em>, <em class="text-primary clickable-storyboard" data-storyboard="central-park">Central Park</em>, <em class="text-primary clickable-storyboard" data-storyboard="liberato">Il segreto di Liberato</em>, <em class="text-primary clickable-storyboard" data-storyboard="greyhound-girl">A Greyhound of a Girl</em>, <em class="text-primary clickable-storyboard" data-storyboard="descendants">Descendants: The Royal Wedding</em>, <em class="text-primary clickable-storyboard" data-storyboard="lupins-tales">Lupin\'s Tales</em>, <em class="text-primary clickable-storyboard" data-storyboard="one-piece">One Piece</em>, as well as video games like <em class="text-primary clickable-storyboard" data-storyboard="diesel-legacy">Diesel Legacy: The Brazen Age</em>.',
+        'Specialized in feature films and animated series, he has collaborated with renowned studios such as <span class="text-primary font-bold">Disney</span>, <span class="text-primary font-bold">Fox Animation</span>, <span class="text-primary font-bold">Netflix</span>, <span class="text-primary font-bold">Xilam</span>, <span class="text-primary font-bold">Cartoon Network</span>, <span class="text-primary font-bold">Lucky Red</span>, <span class="text-primary font-bold">Rai</span>, and <span class="text-primary font-bold">Toei Animation</span>. His credits include acclaimed titles such as <em class="text-primary clickable-storyboard" data-storyboard="disenchanted">Disenchanted</em>, <em class="text-primary clickable-storyboard" data-storyboard="central-park">Central Park</em>, <em class="text-primary">Bob\'s Burgers</em>, <em class="text-primary clickable-storyboard" data-storyboard="liberato">Il segreto di Liberato</em>, <em class="text-primary clickable-storyboard" data-storyboard="greyhound-girl">A Greyhound of a Girl</em>, <em class="text-primary clickable-storyboard" data-storyboard="descendants">Descendants: The Royal Wedding</em>, <em class="text-primary clickable-storyboard" data-storyboard="lupins-tales">Lupin\'s Tales</em>, <em class="text-primary clickable-storyboard" data-storyboard="one-piece">One Piece</em>, <em class="text-primary">Blue Box</em>, as well as video games like <em class="text-primary clickable-storyboard" data-storyboard="diesel-legacy">Diesel Legacy: The Brazen Age</em>.',
         "He is currently working as a Senior 2D Animator and Key Assistant on animated feature films and TV series.",
         "A lifelong enthusiast of cinema and performance, he previously studied and worked as an actor in Italy, where he continues to develop independent projects supporting young talents eager to enhance their skills in the audiovisual field. Through his work, he is committed to fostering creativity and celebrating the art of storytelling and traditional animation.",
         "He is based in Bassano del Grappa, Italy.",
@@ -43,6 +43,18 @@ export const translations = {
               role: "Color Artist",
               studio: "(Doghead, Pisa)",
             },
+            {
+              title: '"The secret of Liberato"',
+              company: "Feature Film (2024)",
+              role: "2D animator",
+              studio: "(ILBE Animation, Rome)",
+            },
+            {
+              title: '"Blue Box"',
+              company: "Season 2 (2026)",
+              role: "Secondary Key Animator",
+              studio: "(Electric Circus, remote work)",
+            },
           ],
         },
         {
@@ -66,6 +78,12 @@ export const translations = {
           category: "FOX ANIMATION",
           items: [
             {
+              title: '"I Love You So Much (It\'s Scary)"',
+              company: "ft. Kiana Ledé - Bob's Burgers (2026)",
+              role: "2D Inbetween and Clean-up Artist",
+              studio: "(TONIC DNA, remote work)",
+            },
+            {
               title: '"Central Park"',
               company: "Season 2-3 (2021-2022)",
               role: "2D Animator, Inbetween and Clean-up Artist",
@@ -76,12 +94,6 @@ export const translations = {
         {
           category: "ADDITIONAL FEATURE FILMS",
           items: [
-            {
-              title: '"The secret of Liberato"',
-              company: "Feature Film (2024)",
-              role: "2D animator",
-              studio: "(ILBE Animation, Rome)",
-            },
             {
               title: '"Iggy the Eagle"',
               company: "(2024)",
@@ -127,6 +139,76 @@ export const translations = {
               company: "(2023)",
               role: "2D Animator, Inbetween and Clean-up Artist",
               studio: "(Maximum Games, remote work)",
+            },
+          ],
+        },
+        {
+          category: "SHORT FILMS / PILOTS / MUSIC VIDEOS / COMMERCIALS",
+          items: [
+            {
+              title: '"Coyote vs Acme"',
+              company: "Teaser, Bugs Bunny trailer (2026)",
+              role: "2D Animator",
+              studio: "(Lucky Red)",
+            },
+            {
+              title: '"Stuck"',
+              company: "Short film (2021-2024)",
+              role: "2D Animator",
+            },
+            {
+              title: '"Hannukah: The Festival of Lights"',
+              company: "RAI short film (2019)",
+              role: "2D Inbetween Artist",
+              studio: "(Animago, remote work)",
+            },
+            {
+              title: '"Flocky"',
+              company: "Short film (2019-2020)",
+              role: "2D Animator",
+              studio: "(ClayManiac, remote work)",
+            },
+            {
+              title: '"Enzo d\'Alò\'s secret series"',
+              company: "Teaser, never released (2019)",
+              role: "2D Inbetween Artist",
+              studio: "(Galactus Studios, Rome)",
+            },
+            {
+              title: '"Gay Help Line"',
+              company: "Commercials (2017)",
+              role: "2D Animator",
+              studio: "(Region Lazio, Rome)",
+            },
+            {
+              title: '"Totò tribute"',
+              company: "Short film (2017)",
+              role: "2D Animator",
+              studio: "(Urciuolo Production, Naples)",
+            },
+            {
+              title: '"Cinema Roma Festival"',
+              company: "Short film (2017)",
+              role: "2D Animator",
+              studio: "(Riande Production, Rome)",
+            },
+            {
+              title: '"Nipponitaly"',
+              company: "Website animation (2016)",
+              role: "2D Animator",
+              studio: "(Italian Japanese Productions, Rome)",
+            },
+            {
+              title: '"Buongiorno a te - Gionnyscandal"',
+              company: "Official music video (2016)",
+              role: "2D Animator",
+              studio: "(VEVO, Milan)",
+            },
+            {
+              title: '"Used to you - Annalisa"',
+              company: "Official music video (2016)",
+              role: "2D Animator",
+              studio: "(Warner Music, Milan)",
             },
           ],
         },
@@ -181,7 +263,7 @@ export const translations = {
       title: "Chi Sono",
       content: [
         "<strong>Tommaso Tamburini</strong> è un Animatore 2D, Story Artist e Attore italiano con oltre sette anni di esperienza nel settore dell'animazione.",
-        'Specializzato in lungometraggi e serie animate, ha collaborato con studi di prestigio come <span class="text-primary font-bold">Disney</span>, <span class="text-primary font-bold">Fox Animation</span>, <span class="text-primary font-bold">Netflix</span>, <span class="text-primary font-bold">Xilam</span>, <span class="text-primary font-bold">Cartoon Network</span>, <span class="text-primary font-bold">Rai</span> e <span class="text-primary font-bold">Toei Animation</span>. Tra i titoli a cui ha preso parte figurano produzioni di rilievo quali <em class="text-primary clickable-storyboard" data-storyboard="disenchanted">Disenchanted</em>, <em class="text-primary clickable-storyboard" data-storyboard="central-park">Central Park</em>, <em class="text-primary clickable-storyboard" data-storyboard="liberato">Il segreto di Liberato</em>, <em class="text-primary clickable-storyboard" data-storyboard="greyhound-girl">A Greyhound of a Girl</em>, <em class="text-primary clickable-storyboard" data-storyboard="descendants">Descendants: The Royal Wedding</em>, <em class="text-primary clickable-storyboard" data-storyboard="lupins-tales">Lupin\'s Tales</em>, <em class="text-primary clickable-storyboard" data-storyboard="one-piece">One Piece</em> e videogiochi come <em class="text-primary clickable-storyboard" data-storyboard="diesel-legacy">Diesel Legacy: The Brazen Age</em>.',
+        'Specializzato in lungometraggi e serie animate, ha collaborato con studi di prestigio come <span class="text-primary font-bold">Disney</span>, <span class="text-primary font-bold">Fox Animation</span>, <span class="text-primary font-bold">Netflix</span>, <span class="text-primary font-bold">Xilam</span>, <span class="text-primary font-bold">Cartoon Network</span>, <span class="text-primary font-bold">Lucky Red</span>, <span class="text-primary font-bold">Rai</span> e <span class="text-primary font-bold">Toei Animation</span>. Tra i titoli a cui ha preso parte figurano produzioni di rilievo quali <em class="text-primary clickable-storyboard" data-storyboard="disenchanted">Disenchanted</em>, <em class="text-primary clickable-storyboard" data-storyboard="central-park">Central Park</em>, <em class="text-primary">Bob\'s Burgers</em>, <em class="text-primary clickable-storyboard" data-storyboard="liberato">Il segreto di Liberato</em>, <em class="text-primary clickable-storyboard" data-storyboard="greyhound-girl">A Greyhound of a Girl</em>, <em class="text-primary clickable-storyboard" data-storyboard="descendants">Descendants: The Royal Wedding</em>, <em class="text-primary clickable-storyboard" data-storyboard="lupins-tales">Lupin\'s Tales</em>, <em class="text-primary clickable-storyboard" data-storyboard="one-piece">One Piece</em>, <em class="text-primary">Blue Box</em> e videogiochi come <em class="text-primary clickable-storyboard" data-storyboard="diesel-legacy">Diesel Legacy: The Brazen Age</em>.',
         "Attualmente lavora come Senior 2D Animator e Key Assistant per lungometraggi e serie TV d'animazione.",
         "Appassionato da sempre di cinema e recitazione, ha intrapreso in passato un percorso come attore in Italia, dove continua a sviluppare progetti indipendenti che sostengono giovani talenti desiderosi di perfezionarsi nel mondo audiovisivo. Attraverso il suo lavoro, si dedica a valorizzare la creatività e a promuovere l'arte della narrazione e dell'animazione tradizionale.",
         "Vive a Bassano del Grappa, in Italia.",
@@ -211,6 +293,18 @@ export const translations = {
               role: "Color Artist",
               studio: "(Doghead, Pisa)",
             },
+            {
+              title: '"Il segreto di Liberato"',
+              company: "Lungometraggio (2024)",
+              role: "Animatore 2D",
+              studio: "(ILBE Animation, Roma)",
+            },
+            {
+              title: '"Blue Box"',
+              company: "Stagione 2 (2026)",
+              role: "Secondary Key Animator",
+              studio: "(Electric Circus, lavoro remoto)",
+            },
           ],
         },
         {
@@ -234,6 +328,12 @@ export const translations = {
           category: "FOX ANIMATION",
           items: [
             {
+              title: '"I Love You So Much (It\'s Scary)"',
+              company: "ft. Kiana Ledé - Bob's Burgers (2026)",
+              role: "2D Inbetween e Clean-up Artist",
+              studio: "(TONIC DNA, lavoro remoto)",
+            },
+            {
               title: '"Central Park"',
               company: "Stagione 2-3 (2021-2022)",
               role: "2D Animator, Inbetween e Clean-up Artist",
@@ -244,12 +344,6 @@ export const translations = {
         {
           category: "LUNGOMETRAGGI AGGIUNTIVI",
           items: [
-            {
-              title: '"Il segreto di Liberato"',
-              company: "Lungometraggio (2024)",
-              role: "Animatore 2D",
-              studio: "(ILBE Animation, Roma)",
-            },
             {
               title: '"Iggy the Eagle"',
               company: "(2024)",
@@ -295,6 +389,76 @@ export const translations = {
               company: "(2023)",
               role: "2D Animator, Inbetween e Clean-up Artist",
               studio: "(Maximum Games, lavoro remoto)",
+            },
+          ],
+        },
+        {
+          category: "CORTOMETRAGGI / PILOT / VIDEOCLIP / PUBBLICITÀ",
+          items: [
+            {
+              title: '"Coyote vs Acme"',
+              company: "Teaser, trailer Bugs Bunny (2026)",
+              role: "Animatore 2D",
+              studio: "(Lucky Red)",
+            },
+            {
+              title: '"Stuck"',
+              company: "Cortometraggio (2021-2024)",
+              role: "Animatore 2D",
+            },
+            {
+              title: '"Hannukah: The Festival of Lights"',
+              company: "Cortometraggio RAI (2019)",
+              role: "2D Inbetween Artist",
+              studio: "(Animago, lavoro remoto)",
+            },
+            {
+              title: '"Flocky"',
+              company: "Cortometraggio (2019-2020)",
+              role: "Animatore 2D",
+              studio: "(ClayManiac, lavoro remoto)",
+            },
+            {
+              title: '"Enzo d\'Alò\'s secret series"',
+              company: "Teaser mai uscito (2019)",
+              role: "2D Inbetween Artist",
+              studio: "(Galactus Studios, Roma)",
+            },
+            {
+              title: '"Gay Help Line"',
+              company: "Spot (2017)",
+              role: "Animatore 2D",
+              studio: "(Regione Lazio, Roma)",
+            },
+            {
+              title: '"Totò tribute"',
+              company: "Cortometraggio (2017)",
+              role: "Animatore 2D",
+              studio: "(Urciuolo Production, Napoli)",
+            },
+            {
+              title: '"Cinema Roma Festival"',
+              company: "Cortometraggio (2017)",
+              role: "Animatore 2D",
+              studio: "(Riande Production, Roma)",
+            },
+            {
+              title: '"Nipponitaly"',
+              company: "Animazione per sito web (2016)",
+              role: "Animatore 2D",
+              studio: "(Italian Japanese Productions, Roma)",
+            },
+            {
+              title: '"Buongiorno a te - Gionnyscandal"',
+              company: "Videoclip ufficiale (2016)",
+              role: "Animatore 2D",
+              studio: "(VEVO, Milano)",
+            },
+            {
+              title: '"Used to you - Annalisa"',
+              company: "Videoclip ufficiale (2016)",
+              role: "Animatore 2D",
+              studio: "(Warner Music, Milano)",
             },
           ],
         },

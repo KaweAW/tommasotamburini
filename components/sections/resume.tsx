@@ -92,7 +92,7 @@ export function ResumeSection() {
 
       <div className="flex justify-center mb-8">
         <Button asChild className="gap-2">
-          <a href="/cv-tommaso-tamburini.pdf" download>
+          <a href="/Tommaso-Tamburini-Resume.pdf" download="Tommaso-Tamburini-Resume.pdf">
             <Download className="h-4 w-4" />
             {t.curriculum.downloadCV}
           </a>
@@ -117,9 +117,11 @@ export function ResumeSection() {
                         {job.title} {job.company}
                       </h5>
                       <p className="text-sm font-medium">{job.role}</p>
-                      <p className="text-xs text-muted-foreground">
-                        {job.studio}
-                      </p>
+                      {"studio" in job && job.studio && (
+                        <p className="text-xs text-muted-foreground">
+                          {job.studio}
+                        </p>
+                      )}
                     </div>
                   ))}
                 </div>
