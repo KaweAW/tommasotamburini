@@ -8,7 +8,7 @@ from reportlab.pdfbase.ttfonts import TTFont
 import os
 
 # Create the PDF
-pdf_path = os.path.join(os.path.dirname(__file__), '..', 'public', 'cv-tommaso-tamburini.pdf')
+pdf_path = os.path.join(os.path.dirname(__file__), '..', 'public', 'Tommaso-Tamburini-Resume.pdf')
 doc = SimpleDocTemplate(pdf_path, pagesize=letter,
                         rightMargin=72, leftMargin=72,
                         topMargin=72, bottomMargin=18)

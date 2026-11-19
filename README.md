@@ -29,7 +29,7 @@ Portfolio of **Tommaso Tamburini**, a 2D animator and story artist from Italy wh
 - **Video showcase**: Vimeo players for each production, opened from a card.
 - **Storyboard galleries**: image viewer with next and previous controls.
 - **English and Italian**: one button switches every text on the page; the choice is remembered while moving between pages.
-- **Downloadable CV**: a PDF served by the site itself (`public/cv-tommaso-tamburini.pdf`).
+- **Downloadable CV**: a PDF served by the site itself (`public/Tommaso-Tamburini-Resume.pdf`).
 - **Search engine basics**: page metadata, Open Graph and Twitter cards, `schema.org` structured data for the person, a sitemap and `robots.txt`.
 - **Built for phones too**: a slim header with a full-screen menu, two-column galleries with the title always visible (there is no hover on a touch screen), big tap targets and swipe in the storyboard viewer. The desktop layout is unchanged.
 
@@ -75,13 +75,13 @@ lib/
   translations.ts  every text, in English and Italian
   data.ts          storyboard, animation, video and sketch lists
   routes.ts        section URLs
-public/            images, icons, robots.txt and the CV (cv-tommaso-tamburini.pdf)
+public/            images, icons, robots.txt and the CV (Tommaso-Tamburini-Resume.pdf)
 scripts/
   generate-cv.py   builds a plain-text CV with reportlab (not used by the site yet)
 docs/screenshots/  the pictures used in this README
 ```
 
-To change a text, edit `lib/translations.ts` (one entry per language); to add a project, edit `lib/data.ts`. To update the CV, replace `public/cv-tommaso-tamburini.pdf`; the Download CV button always points to that file.
+To change a text, edit `lib/translations.ts` (one entry per language); to add a project, edit `lib/data.ts`. To update the CV, replace `public/Tommaso-Tamburini-Resume.pdf`; the Download CV button always points to that file (the old `/cv-tommaso-tamburini.pdf` address redirects to it).
 
 ## Deployment
 

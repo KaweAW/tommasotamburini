@@ -92,7 +92,7 @@ export function ResumeSection() {
 
       <div className="flex justify-center mb-8">
         <Button asChild className="gap-2">
-          <a href="/cv-tommaso-tamburini.pdf" download>
+          <a href="/Tommaso-Tamburini-Resume.pdf" download="Tommaso-Tamburini-Resume.pdf">
             <Download className="h-4 w-4" />
             {t.curriculum.downloadCV}
           </a>
