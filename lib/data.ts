@@ -45,12 +45,21 @@ export const storyboardProjects: StoryboardProject[] = [
 export const animationProjects: AnimationProject[] = [
   {
     id: "blue-box",
-    title: "Coming Soon",
+    title: "Blue Box Season 2",
     year: "2026",
     distributor: "Netflix",
-    thumbnail:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Netflix%20Blue%20Box-O1gCHN8WXuwLImgbkxgIJPwTuj5rhS.jpg",
-    vimeoEmbed: "",
+    thumbnail: "/images/animation/blue-box-season-2.jpg",
+    vimeoEmbed:
+      '<video src="/videos/blue-box-season-2.mp4" poster="/images/animation/blue-box-season-2.jpg" controls playsinline preload="metadata" class="w-full rounded-lg bg-black" aria-label="Blue Box Season 2"></video>',
+  },
+  {
+    id: "bobs-buskers",
+    title: "Bob's Buskers - Kiana Ledé",
+    year: "2026",
+    distributor: "Fox Animation",
+    thumbnail: "/images/animation/bobs-buskers.jpg",
+    vimeoEmbed:
+      '<video src="/videos/bobs-buskers-kiana-lede.mp4" poster="/images/animation/bobs-buskers.jpg" controls playsinline preload="metadata" class="w-full rounded-lg bg-black" aria-label="Bob&#039;s Buskers - Kiana Ledé"></video>',
   },
   {
     id: "one-piece",
@@ -67,10 +76,9 @@ export const animationProjects: AnimationProject[] = [
     title: "Iggy the Eagle",
     year: "2026",
     distributor: "Orange Animation",
-    thumbnail:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/poster-LAP6haLMIxjhM71Jl8QmmE1N2AiZaX.jpg",
+    thumbnail: "/images/animation/iggy-the-eagle.jpg",
     vimeoEmbed:
-      '<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1123296401?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="IGGY-trailer-FINAL-logotypy"></iframe></div>',
+      '<video src="/videos/iggy-the-eagle.mp4" poster="/images/animation/iggy-the-eagle.jpg" controls playsinline preload="metadata" class="w-full rounded-lg bg-black" aria-label="Iggy the Eagle"></video>',
   },
   {
     id: "liberato",

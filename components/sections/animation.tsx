@@ -40,23 +40,15 @@ function AnimationContent() {
 
       <div className="-mx-4 mb-8 md:mx-0 md:mb-12">
         {/* Animation reel */}
-        <div style={{ padding: "31.5% 0 0 0", position: "relative" }}>
-          <iframe
-            src="https://player.vimeo.com/video/1118699935?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&sidedock=0&sharing=0"
-            frameBorder="0"
-            loading="lazy"
-            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            style={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "100%",
-              height: "100%",
-            }}
-            title="ANIMATION REEL 2025"
-          />
-        </div>
+        <video
+          src="/videos/animation-reel-2026.mp4"
+          poster="/images/animation/animation-reel-2026-poster.jpg"
+          controls
+          playsInline
+          preload="metadata"
+          className="aspect-video w-full bg-black"
+          aria-label="Animation reel 2026"
+        />
       </div>
 
       <div className="mx-auto grid max-w-6xl grid-cols-2 gap-3 md:grid-cols-2 md:gap-6 lg:grid-cols-3">
@@ -76,13 +68,6 @@ function AnimationContent() {
                   loading="lazy"
                   className="h-40 w-full bg-gray-100 object-contain transition-transform duration-300 group-hover:scale-110 sm:h-52 md:h-64"
                 />
-                {animation.id === "blue-box" && (
-                  <div className="absolute inset-0 flex items-center justify-center bg-black/40">
-                    <span className="text-xl font-bold text-white md:text-2xl">
-                      Coming Soon
-                    </span>
-                  </div>
-                )}
                 <div className="absolute inset-0 hidden items-center justify-center bg-black/60 opacity-0 transition-opacity duration-300 group-hover:opacity-100 md:flex">
                   <div className="text-center text-white">
                     <h2 className="mb-2 text-xl font-bold">
@@ -129,20 +114,10 @@ function AnimationContent() {
           </div>
 
           <div className="flex flex-1 flex-col items-center justify-center space-y-4 p-4 md:space-y-6 md:p-6">
-            {selected.id === "blue-box" ? (
-              <div className="w-full max-w-4xl">
-                <img
-                  src={selected.thumbnail || "/placeholder.svg"}
-                  alt={selected.title}
-                  className="h-auto w-full rounded-lg object-cover"
-                />
-              </div>
-            ) : (
-              <div
-                className="w-full max-w-4xl [&_iframe]:max-w-full"
-                dangerouslySetInnerHTML={{ __html: selected.vimeoEmbed }}
-              />
-            )}
+            <div
+              className="w-full max-w-4xl [&_iframe]:max-w-full"
+              dangerouslySetInnerHTML={{ __html: selected.vimeoEmbed }}
+            />
 
             <div className="space-y-1 text-center text-white md:space-y-2">
               <h3 className="text-xl font-bold md:text-2xl">
