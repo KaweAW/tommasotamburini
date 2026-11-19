@@ -133,11 +133,12 @@ function Header() {
 
 function Footer() {
   const { t } = useLanguage();
+  const year = new Date().getFullYear();
   return (
     <footer className="mt-12 border-t border-border bg-muted/50 md:mt-16">
       <div className="container mx-auto px-4 py-6">
         <div className="text-center text-sm text-muted-foreground">
-          {t.footer.copyright}
+          <span suppressHydrationWarning>© {year}</span> {t.footer.rights}
         </div>
       </div>
     </footer>
