@@ -74,7 +74,7 @@ export const animationProjects: AnimationProject[] = [
   {
     id: "iggy-eagle",
     title: "Iggy the Eagle",
-    year: "2026",
+    year: "2024",
     distributor: "Orange Animation",
     thumbnail: "/images/animation/iggy-the-eagle.jpg",
     vimeoEmbed:

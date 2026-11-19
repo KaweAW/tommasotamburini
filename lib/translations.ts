@@ -240,7 +240,7 @@ export const translations = {
       navigation: "Use arrow keys or click arrows to navigate between images",
     },
     footer: {
-      copyright: "© 2025 Tommaso Tamburini. All rights reserved.",
+      copyright: "© 2026 Tommaso Tamburini. All rights reserved.",
     },
     animation: {
       title: "Animation",
@@ -491,7 +491,7 @@ export const translations = {
         "Usa i tasti freccia o clicca le frecce per navigare tra le immagini",
     },
     footer: {
-      copyright: "© 2025 Tommaso Tamburini. Tutti i diritti riservati.",
+      copyright: "© 2026 Tommaso Tamburini. Tutti i diritti riservati.",
     },
     animation: {
       title: "Animazione",
