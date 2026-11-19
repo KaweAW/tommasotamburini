@@ -117,9 +117,11 @@ export function ResumeSection() {
                         {job.title} {job.company}
                       </h5>
                       <p className="text-sm font-medium">{job.role}</p>
-                      <p className="text-xs text-muted-foreground">
-                        {job.studio}
-                      </p>
+                      {"studio" in job && job.studio && (
+                        <p className="text-xs text-muted-foreground">
+                          {job.studio}
+                        </p>
+                      )}
                     </div>
                   ))}
                 </div>
